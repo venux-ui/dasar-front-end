@@ -1,0 +1,350 @@
+.kepala {
+    background-color: #FFD662;
+    padding: 5%;
+    text-align: center;
+    color: red;
+    border-bottom: 2px solid black;
+}
+
+
+.kepala .tebal:hover {
+    text-shadow: 0px 0px 7px tomato;
+    transition-duration: 0.5s;
+}
+
+.kepala p {
+    text-align: center;
+}
+
+.penunjuk_container {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.itemnya {
+    flex-direction: row;
+}
+
+.box {
+    flex-basis: 25%;
+    text-align: center;
+    padding: 0.5%;
+    background-color: #E08119;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.right_box {
+    text-align: right;
+    flex-basis: 75%;
+    background-color: grey;
+}
+
+
+.penunjuk_container .box:hover {
+    background-color: #F96714;
+    color: #ffffff;
+    box-shadow: 7px 7px 5px #FE840E;
+}
+
+.penunjuk_container .right_box:hover {
+    background-color: #333333;
+    box-shadow: 7px 7px 5px #706c61;
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.kotak {
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    flex-grow: 1;
+    border-radius: 5px 15px;
+    box-shadow: 0px 0px 5px black;
+    overflow: auto;
+}
+
+.konten_satu .kotak {
+    flex-grow: 0;
+    flex-basis: 25%;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+    border: 1px solid #dddddd;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gambar .imgTooltip {
+    visibility: hidden;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    color: white;
+    padding: 5px 2px;
+    border-radius: 6px;
+    width: 110px;
+    text-align: center;
+}
+
+.gambar .imgTooltip::after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.gambar:hover .imgTooltip {
+    visibility: visible;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+header {
+    display: inline;
+}
+
+.kartu {
+    padding: 5px;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.kartu_cap {
+    padding: 5px 10px;
+}
+
+.kartu_cap p {
+    text-align: center;
+}
+
+.item {
+    display: flex;
+}
+
+.submenu {
+    display: none;
+}
+
+.muncul_submenu:hover .submenu {
+    display: block;
+}
+
+.YE {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.konten_satu {
+    display: flex;
+    flex-direction: row;
+}
+
+.konten_satu .ganda {
+    flex-basis: 50%;
+}
+
+.kotak_dua {
+    flex-basis: 20%;
+}
+
+.gambar img {
+    max-height: 110px;
+    object-fit: cover;
+    object-position: center;
+}
+
+table,
+th,
+td {
+    border: 3px solid gray;
+
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 1% 5%;
+}
+
+.gambar .foto {
+    max-height: none;
+    width: auto;
+}
+
+.kotak h2:hover {
+    color: red;
+    text-shadow: 0px 0px 3px tomato;
+}
+
+.kotak h3:hover {
+    color: tomato;
+    text-shadow: 0px 0px 2px red;
+}
+
+.kotak h2,
+h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+th {
+    background-color: #FFD662;
+    color: white;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 175px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.box:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    text-align: left;
+    padding: 12px 15px;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+#Transfortasi a {
+    color: blue;
+}
+
+#Transfortasi a:hover {
+    text-decoration: underline;
+}
+
+#Olahraga a {
+    color: blue;
+}
+
+#Olahraga a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer {
+    background-color: gray;
+    padding: 2%;
+}
+
+.profil {
+    max-width: 200px;
+    border-radius: 200%;
+}
+
+#author {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#item {
+    background-color: white;
+    float: right;
+    height: auto;
+    width: auto;
+}
+
+.tutup {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.tutup:hover,
+.tutup:focus {
+    color: #bbb;
+    cursor: pointer;
+}
+
+aside table {
+    width: 150px;
+    margin: 0;
+}
+
+@media screen and (max-width: 513px) {
+    .konten_satu {
+        flex-direction: column;
+    }
+
+    .media .konten_satu {
+        padding-left: 15%;
+    }
+
+    .penunjuk_container {
+        flex-direction: column;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .dropdown {
+        position: static;
+    }
+}
